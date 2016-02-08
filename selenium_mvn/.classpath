@@ -22,7 +22,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -33,12 +33,12 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="C:/Users/ianandakumar/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.49.0/selenium-chrome-driver-2.49.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/ianandakumar/.m2/repository/org/seleniumhq/selenium/selenium-api/2.49.0/selenium-api-2.49.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ianandakumar/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.49.0/selenium-ie-driver-2.49.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ianandakumar/.m2/repository/org/seleniumhq/selenium/selenium-java/2.49.0/selenium-java-2.49.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ianandakumar/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.49.0/selenium-firefox-driver-2.49.0.jar"/>
 	<classpathentry kind="var" path="M2_REPO"/>
 	<classpathentry kind="lib" path="C:/Program Files/Java/javacsv.jar/javacsv.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ianandakumar/Downloads/microsoft-translator-java-api-0.6.2-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ianandakumar/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.50.0/selenium-ie-driver-2.50.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ianandakumar/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.50.0/selenium-firefox-driver-2.50.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ianandakumar/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.50.0/selenium-chrome-driver-2.50.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

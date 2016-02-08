@@ -5,16 +5,18 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>seleniumBing</name>
   <description>seleniumBing</description>
+  
+ 
   <dependencies><dependency>
    
 	<groupId>org.seleniumhq.selenium</groupId>
 	<artifactId>selenium-firefox-driver</artifactId>
-	<version>2.49.0</version>
+	<version>2.50.0</version>
 </dependency>
 <dependency>
 	<groupId>org.seleniumhq.selenium</groupId>
 	<artifactId>selenium-ie-driver</artifactId>
-	<version>2.49.0</version>
+	<version>2.50.0</version>
 </dependency>
 <dependency>
 	<groupId>net.sourceforge.javacsv</groupId>
@@ -25,15 +27,20 @@
 <dependency>
 	<groupId>org.seleniumhq.selenium</groupId>
 	<artifactId>selenium-chrome-driver</artifactId>
-	<version>2.49.0</version>
+	<version>2.50.0</version>
 </dependency>
 
     <dependency>
 	<groupId>junit</groupId>
 	<artifactId>junit</artifactId>
+	
 	<version>4.11</version>
 </dependency>
-    
+    <dependency> <groupId>com.memetix</groupId> 
+    <artifactId>microsoft-translator-java-api</artifactId> 
+    <version>0.6.2</version> <type>jar</type> </dependency>
     
     </dependencies>
+    
+    
 </project>
