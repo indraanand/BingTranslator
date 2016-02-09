@@ -13,7 +13,7 @@ import org.junit.Test;
 			// Set your Windows Azure Marketplace client info - See http://msdn.microsoft.com/en-us/library/hh454950.aspx
 	    Translate.setClientId("BingTranslator_Indra");
 	    Translate.setClientSecret("G1604PD6u3iFEcptcGUoaWodN7hU23oaVfgkLzKVTEY=");
-	  		CsvReader Reader = new CsvReader("C://Translate.csv");
+	  		CsvReader Reader = new CsvReader("Translate.csv");
 		
 	Reader.readHeaders();
 		  //Text,To,From 
@@ -35,6 +35,7 @@ import org.junit.Test;
 		        	 FromLang=Language.ENGLISH;
 		        	 break;
 		         case "":
+		        	 System.out.printf("No From Language\n");
 		        	 FromLang=Language.ENGLISH;
 		           	 break;
 		         case "Spanish":
@@ -58,6 +59,7 @@ import org.junit.Test;
 			        	 break;
 			         case "":
 			        	 ToLang=Language.ENGLISH;
+			        	 System.out.printf("No To Language");
 			           	 break;
 			         case "Spanish":
 			        	 ToLang=Language.SPANISH;

@@ -132,20 +132,60 @@ public class seleniumtranslatorTest{
 	}	
 
 
-/*	@Test
-	public void StartIEWebDriver() throws InterruptedException{
+	@Test
+	public void StartIEWebDriver() throws InterruptedException, IOException{
 		
 		  
 		 System.setProperty("webdriver.ie.driver", "C:\\Program Files\\Internet Explorer\\iexplore.exe");
-		  /*  DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
+		   DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
 		    cap.setCapability(CapabilityType.ForSeleniumServer.ENSURING_CLEAN_SESSION, true);
-		    baseUrl = "http//www.google.com";
-		    driver = new InternetExplorerDriver(cap);
-		    driver.manage().deleteAllCookies();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		 WebDriver driver =new InternetExplorerDriver();
-		driver.get("https://www.bing.com/translator");
-		System.out.println("test");
-	}
-*/
+		  
+		   WebDriver driver = new InternetExplorerDriver(cap);
+		    driver.get("https://www.bing.com/translator");
+			
+			
+			CsvReader Reader = new CsvReader("C://Translate.csv");
+			
+			Reader.readHeaders();
+			
+	       //Text,To,From 
+			while  (Reader.readRecord())
+			{
+				String TextToTrans = Reader.get("Text");
+				String SrcLang = Reader.get("From");
+				String DstLang = Reader.get("To");
+				System.out.println(TextToTrans + ":" + SrcLang + ":" + DstLang);
+			
+			if(!SrcLang.equals("")) 
+			{
+			Thread.sleep(500);
+			
+			driver.findElement(By.id("Header_SrcLangList")).click();
+			Thread.sleep(500);
+			
+			driver.findElement(By.linkText(SrcLang)).click();
+		
+			Thread.sleep(500);
+			driver.findElement(By.id("InputText")).clear();
+			driver.findElement(By.id("InputText")).sendKeys(TextToTrans);
+			
+		  
+					
+			Thread.sleep(500);
+			driver.findElement(By.id("Header_DstLangList")).click();
+			Thread.sleep(500);
+			
+			driver.findElement(By.linkText(DstLang)).click();
+			Thread.sleep(500);
+			}
+			else  System.out.println("empty value"+ SrcLang);
+
+			
+			}
+			Reader.close();
+			 driver.quit();
+		}	
+		  
+
 }
+
